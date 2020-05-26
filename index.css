@@ -1,0 +1,23 @@
+.sec {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  font-family: "Times New Roman", Times, serif;
+}
+button {
+  background-color: yellow;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  color: teal;
+  font-family: "Chelsea Market", cursive;
+}
+input {
+  background-color: violet;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  padding: 5px;
+  font-family: "Times New Roman", Times, serif;
+}

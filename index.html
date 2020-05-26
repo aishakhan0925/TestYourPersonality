@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./index.css" />
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap" rel="stylesheet">
+    <title>API Testing</title>
+</head>
+
+<body>
+    <div class="sec">
+        <h3>Test Your Personality</h3>
+        <div>
+            <div>
+                <label>Enter Your Name Here!</label><br>
+                <input type="text" id="nameId" placeholder="Enter Your Name here!" />
+            </div>
+            <br>
+            <div>
+                <img src="img.png.png" width="200px" height="200px" id="imgId" />
+            </div>
+            <br>
+            <button>Click me</button>
+            <button id="refresh">Refresh</button>
+
+
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+</body>
+<script>
+
+    $(document).ready(function () {
+        $('button').click(function () {
+            const name = $('#nameId').val();
+            // alert(name);
+            $('#imgId').attr('src', "https://joeschmoe.io/api/v1/random");
+            $("#refresh").click(function () {
+                location.reload(true);
+            });
+        })
+    })
+ 
+</script>
+
+</html>
